@@ -43,6 +43,11 @@ products into the database. These two steps can take up to 30 seconds.
 Finally Apache is run. After it is running site can be connected to
 using a web browser.
 
+## use docker-compose to launch the setup
+Install docker-compose and then :
+
+    docker-compose up
+
 ## Using Magento 2
 
 Magento 2 is still under active development. A developer beta is due
