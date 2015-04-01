@@ -1,0 +1,16 @@
+web:
+  build: .
+  links:
+   - db:mysql
+  ports:
+   - "80:80"
+  environment:
+   - MYSQL_USER=root
+   - MYSQL_PASSWORD=admin
+   - PUBLIC_HOST=docker.local
+db:
+  image: orchardup/mysql
+  ports:
+   - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: admin
